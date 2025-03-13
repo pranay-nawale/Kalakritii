@@ -1,0 +1,10 @@
+.nav2 {
+      background-color: #fcdca2;
+      width: vw;
+    }
+ .nav-link:hover {
+    color: black;
+    border: 0.5px;
+    border-style:solid ;
+    border-radius: 5px; /* Optional rounded effect */
+  }

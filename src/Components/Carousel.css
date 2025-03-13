@@ -1,0 +1,26 @@
+.carousel-img {
+    width: 100%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 75vh; /* Reduce height */
+    object-fit: cover; /* Ensure proper cropping */
+    display: block; /* Remove extra spacing */
+}
+
+/* Adjust for different screens */
+@media (max-width: 1024px) { /* Laptops */
+    .carousel-img {
+        max-height: 65vh;
+    }
+}
+
+@media (max-width: 768px) { /* Tablets */
+    .carousel-img {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .carousel-img {
+        max-height: 40vh; /* Smaller height on mobile */
+    }
+}

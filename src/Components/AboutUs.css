@@ -1,0 +1,74 @@
+/* Ensure Full Width */
+.container-fluid {
+    width: 100%;
+  }
+  
+  /* Responsive Text Alignment */
+  .text-justify {
+    text-align: justify;
+  }
+  
+  /* Adjust Box Shadow */
+  .shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+  .objective-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 290px;
+    
+  }
+  .number-badge {
+    background: #d36f42;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .image-container img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .p1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .hero-section {
+    background: linear-gradient(to right, rgba(255, 223, 186, 0.3), #f5f5f5);
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .hero-heading {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #f4a52d;
+    font-weight: bold;
+  }
+  
+  .video-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  video {
+    width: 100%;
+    border-radius: 10px;
+  }

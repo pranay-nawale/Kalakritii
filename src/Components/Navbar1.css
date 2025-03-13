@@ -1,0 +1,77 @@
+/* Remove underline from links */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.navbar a {
+    text-decoration: none !important;
+    color: #333; /* Default color */
+    font-weight: 500;
+  }
+  
+  .nav1{
+    width: vw;
+  }
+  /* Hover effect for links */
+  .navbar a:hover {
+    color: #b45c1c !important; /* Change color on hover */
+  }
+  
+  /* Style for active link */
+  .navbar .nav-link.active {
+    color: #b45c1c!important;
+    font-weight: bold;
+  }
+  
+  /* Button hover effect */
+  .btn-warning:hover {
+    background-color: #ff6600 !important;
+    color: white !important;
+  }
+  
+  /* Cart & Account Icons Hover */
+  .navbar a i {
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover i {
+    color: #b45c1c !important;
+  }
+  
+  /* Make the search button circular */
+  .btn-warning {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #google_translate_element {
+    min-width: 120px;
+  }
+
+  .cart-trolley{
+    position: relative;
+  }
+  
+  .trolley{
+    position: relative;
+    font-size: 3.2rem;
+  }
+
+  .total-items{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: -95%;
+    left: 15%;
+    background-color: #f4cc9b;
+    border-radius: 50%;
+    
+  }

@@ -2,11 +2,10 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaIndustry, FaHandHoldingUsd, FaStore, FaPalette } from "react-icons/fa";
 import weaving_women from "../assets/weaving_women.jpg";
-import { NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <NavLink to="/About" style={{ textDecoration: "none" }}>
+   
       <div className="container-fluid bg-light py-5 d-flex justify-content-center">
         <div 
           className="container text-white rounded p-5 shadow-lg"
@@ -49,7 +48,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </NavLink>
+  
   );
 };
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import AuthSection from "./Components/AuthSection";
 import Navbar2 from "./Components/Navbar2";
+import Navbar1 from "./Components/Navbar1";
+import Footer from "./Components/Footer";
 import Carousel from "./Components/Carousel";
 import Banner from "./Components/Banner";
 import "bootstrap/dist/css/bootstrap.css";
@@ -33,6 +35,7 @@ import painting4 from './assets/painting4.jpg';
 const Home = () => {
   return (
     <>
+      <Navbar1 />
       <Navbar2 />
       <Carousel />
     
@@ -85,6 +88,7 @@ const Home = () => {
 
       <AuthSection />
       <Banner />
+      <Footer />
     </>
   );
 };

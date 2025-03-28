@@ -1,11 +1,16 @@
 import React from 'react'
-import UserDashboard from './Components/UserDashboard';
-
+import SellerForm from "./Components/SellerForm";
+import AdminPanel from "./Components/AdminPanel";
+import ProductList from "./Components/ProductList";
+import Cart from "./Components/Cart";
 
 const Dashboard = () => {
   return (
     <div>
-      <UserDashboard />
+      <SellerForm />
+      <AdminPanel />
+      <ProductList />
+      <Cart />
     </div>
   )
 }

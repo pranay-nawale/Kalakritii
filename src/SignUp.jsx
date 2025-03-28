@@ -11,12 +11,13 @@ function SignUp() {
     phone: "",
     password: "",
     confirmPassword: "",
+    role: "", // New field for user role
   });
 
   const navigate = useNavigate();
 
   const handleSignUp = () => {
-    if (!user.fullName || !user.username || !user.email || !user.phone || !user.password || !user.confirmPassword) {
+    if (!user.fullName || !user.username || !user.email || !user.phone || !user.password || !user.confirmPassword || !user.role) {
       alert("Please fill all fields!");
       return;
     }
@@ -102,7 +103,34 @@ function SignUp() {
           />
         </div>
 
-        <button className="btn  w-100" style={{ backgroundColor: "#c3613a" }} onClick={handleSignUp}>
+        {/* Role Selection */}
+        <div className="mb-3">
+          <h6>Select Role:</h6>
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="role"
+              value="buyer"
+              checked={user.role === "buyer"}
+              onChange={(e) => setUser({ ...user, role: e.target.value })}
+            />
+            <label className="form-check-label">Buyer</label>
+          </div>
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="role"
+              value="seller"
+              checked={user.role === "seller"}
+              onChange={(e) => setUser({ ...user, role: e.target.value })}
+            />
+            <label className="form-check-label">Seller</label>
+          </div>
+        </div>
+
+        <button className="btn w-100" style={{ backgroundColor: "#c3613a" }} onClick={handleSignUp}>
           Sign Up
         </button>
 
@@ -115,5 +143,6 @@ function SignUp() {
 }
 
 export default SignUp;
+
 
 
